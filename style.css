@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    background-color: rgb(191, 230, 255);
+}
+
+.logo {
+    padding-left: 30px;
+}
+
+.logo img {
+    width: 200px;
+    cursor: pointer;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-left: auto;
+    justify-content: flex-end;
+
+}
+
+
+.right-nav a {
+    padding: 40px 20px;
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+    font-size: 17px;
+    color: black;
+    position: relative;
+}
+
+.right-nav a::before {
+    content:'';
+    position: absolute;
+    top:calc(75%);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 40px;
+    height: 3px;
+    width: 0;
+    background-color: #2e3192;
+    transition: 0.1s;
+}
+
+.right-nav a:hover::before {
+    width: 80%;
+}
+
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+.content img{
+    width: 100%;
+}
+
+.box{
+    margin: 100px 0;
+    margin-inline: auto;
+    width: min(90%,1000px);
+    box-shadow: 0 0 10px -4px black;
+    padding: 50px;
+}
+
+
+
+
+
+footer{
+    padding: 100px 30px 30px;
+    height: 500px;
+    background: url('assets/images/main-slider-04.jpg');
+    position: relative;
+}
+
+footer .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+background-color: rgba(58, 58, 58, 0.603);
+    z-index: 10;
+}
+
+
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.footer-content div{
+    z-index: 20;
+    text-align: center;
+    color: white;
+    font-family: fantasy;
+    line-height: 30px;
+    position: relative;
+
+}
+
+.footer-content div iframe{
+    width: min(600px,100%);
+}
+
+.footer-content div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content ul {
+    text-align: start;
+    align-self: center;
+}
+.footer-content div:nth-child(1){
+    text-align: start;
+}
+.footer-content h4{
+    text-align: center;
+    margin-bottom: 30px;
+
+}

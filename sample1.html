@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bannari Amman Groups</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="logo"><img src="assets/logo.svg"></div>
+        <div class="right-nav">
+            <a href="#">Home</a>
+            <a href="#">What's new</a>
+            <a href="#">Product</a>
+            <a href="#">Investors Information</a>
+            <a href="#">Feedback</a>
+            <a href="#">Contact us</a>
+            <a href="#">Jobs</a>
+        </div>
+    </div>
+    <div class="content">
+        <img class="img" src="assets/images/main-slider-01.jpg" alt="">
+        <img class="img" src="assets/images/main-slider-02.jpg" alt="">
+        <img class="img" src="assets/images/main-slider-03.jpg" alt="">
+        <img class="img" src="assets/images/main-slider-04.jpg" alt="">
+    </div>
+
+    <div class="box">
+        Bannari Amman Group is one of the largest Industrial Conglomerates in South India with a wide spectrum of manufacturing, trading and Service activities. Manufacturing and trading include sugar, alcohol, liquor, granite etc. The service sector has wind power energy, education etc. Group's net-worth exceeds US $270 million, with sales turnover crossing US $570 million.
+        Organised business growth through value based management which in turn contributes to a better society.
+        Our Strategy <br> <br>
+        To emerge as a leader in the private sector in terms of market share through professional management, believe in achieving a consistent and steady growth, striking a balance between profitability and social welfare emphasising complete customer satisfaction. The main ethical business standard of the Group is meaningful concern for the people with quality consciousness.
+            </div>
+
+
+    <footer>
+        <div class="overlay"></div>
+        <div class="footer-content">
+            <div>
+                <b>Corporate Office:</b> <br>
+                Dare House <br>
+                New No.2, Old 234, <br>
+                NSC Bose Road, Chennai - 600 001. <br>
+                <br>
+                <br>
+                P : +91-44-2530 6689 / 44-2530 6780 <br> <br>
+                F : +91- 44-2534 0858
+            </div>
+            <div><h4>Quick Links</h4>
+            
+        
+                <br>
+       
+                <ul>
+                    <li>News</li>
+                    <li>carrers</li>
+                    <li>Photo Gallery</li>
+                    <li>CSR</li>
+                    <li>Contact</li>
+                    <li>Disclaimer</li>
+                    <li>Press Release</li>
+                </ul>
+        </div>
+        <div>
+            <h4>Get Direction</h4>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15639.674989120058!2d77.25221153955076!3d11.485786400000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9216e84c17ba9%3A0x31b2998fe98e7d4c!2sBannari%20Amman%20Sugars%20Limited%20Unit-1!5e0!3m2!1sen!2sin!4v1658567506811!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+    </footer>
+
+</body>
+
+
+
+<script>
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("img");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 2000); 
+}
+
+</script>
+</html>
